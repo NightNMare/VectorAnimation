@@ -1,0 +1,109 @@
+<animated-vector
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:aapt="http://schemas.android.com/aapt">
+    <aapt:attr name="android:drawable">
+        <vector
+            android:name="vector"
+            android:width="200dp"
+            android:height="200dp"
+            android:viewportWidth="200"
+            android:viewportHeight="200">
+            <path
+                android:name="side1"
+                android:pathData="M 30 30 L 170 30 L 170 60 L 30 60 Z"
+                android:fillColor="#000000"/>
+            <path
+                android:name="side2"
+                android:pathData="M 30 85 L 170 85 L 170 115 L 30 115 Z"
+                android:fillColor="#000000"/>
+            <path
+                android:name="side3"
+                android:pathData="M 30 140 L 170 140 L 170 170 L 30 170 Z"
+                android:fillColor="#000000"/>
+            <path
+                android:name="column1"
+                android:pathData="M 30 30 L 60 30 L 60 30 L 30 30 Z"
+                android:fillColor="#000000"/>
+            <path
+                android:name="column2"
+                android:pathData="M 85 30 L 115 30 L 115 30 L 85 30 Z"
+                android:fillColor="#000000"/>
+            <path
+                android:name="column3"
+                android:pathData="M 140 30 L 170 30 L 170 30 L 140 30 Z"
+                android:fillColor="#000000"/>
+        </vector>
+    </aapt:attr>
+    <target android:name="side1">
+        <aapt:attr name="android:animation">
+            <objectAnimator
+                android:propertyName="pathData"
+                android:startOffset="199"
+                android:duration="488"
+                android:valueFrom="M 30 30 L 170 30 L 170 60 L 30 60 Z"
+                android:valueTo="M 170 30 L 170 30 L 170 60 L 170 60 Z"
+                android:valueType="pathType"
+                android:interpolator="@android:anim/decelerate_interpolator"/>
+        </aapt:attr>
+    </target>
+    <target android:name="side2">
+        <aapt:attr name="android:animation">
+            <objectAnimator
+                android:propertyName="pathData"
+                android:startOffset="300"
+                android:duration="488"
+                android:valueFrom="M 30 85 L 170 85 L 170 115 L 30 115 Z"
+                android:valueTo="M 170 85 L 170 85 L 170 115 L 170 115 Z"
+                android:valueType="pathType"
+                android:interpolator="@android:anim/decelerate_interpolator"/>
+        </aapt:attr>
+    </target>
+    <target android:name="side3">
+        <aapt:attr name="android:animation">
+            <objectAnimator
+                android:propertyName="pathData"
+                android:startOffset="382"
+                android:duration="488"
+                android:valueFrom="M 30 140 L 170 140 L 170 170 L 30 170 Z"
+                android:valueTo="M 170 140 L 170 140 L 170 170 L 170 170 Z"
+                android:valueType="pathType"
+                android:interpolator="@android:anim/decelerate_interpolator"/>
+        </aapt:attr>
+    </target>
+    <target android:name="column1">
+        <aapt:attr name="android:animation">
+            <objectAnimator
+                android:propertyName="pathData"
+                android:startOffset="899"
+                android:duration="468"
+                android:valueFrom="M 30 30 L 60 30 L 60 30 L 30 30 Z"
+                android:valueTo="M 30 30 L 60 30 L 60 170 L 30 170 Z"
+                android:valueType="pathType"
+                android:interpolator="@android:anim/overshoot_interpolator"/>
+        </aapt:attr>
+    </target>
+    <target android:name="column2">
+        <aapt:attr name="android:animation">
+            <objectAnimator
+                android:propertyName="pathData"
+                android:startOffset="999"
+                android:duration="468"
+                android:valueFrom="M 85 30 L 115 30 L 115 30 L 85 30 Z"
+                android:valueTo="M 85 30 L 115 30 L 115 170 L 85 170 Z"
+                android:valueType="pathType"
+                android:interpolator="@android:anim/overshoot_interpolator"/>
+        </aapt:attr>
+    </target>
+    <target android:name="column3">
+        <aapt:attr name="android:animation">
+            <objectAnimator
+                android:propertyName="pathData"
+                android:startOffset="1092"
+                android:duration="468"
+                android:valueFrom="M 140 30 L 170 30 L 170 30 L 140 30 Z"
+                android:valueTo="M 140 30 L 170 30 L 170 170 L 140 170 Z"
+                android:valueType="pathType"
+                android:interpolator="@android:anim/overshoot_interpolator"/>
+        </aapt:attr>
+    </target>
+</animated-vector>
